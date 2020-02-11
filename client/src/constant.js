@@ -1,5 +1,6 @@
 export const HOST = 'http://localhost:8080';
 export const USER_TOKEN = 'USER_TOKEN';
+export const USER_TOKEN_IS_EMPTY = 'USER_TOKEN_IS_EMPTY';
 
 export const REGISTER_URI = '/register';
 export const LOGIN_URI = '/login';

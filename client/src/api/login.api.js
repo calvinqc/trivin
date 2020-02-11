@@ -16,8 +16,9 @@ export const attemptLogin = userData => dispatch => {
     .post(`${HOST}${LOGIN_URI}`, userData)
     .then(res => {
       // Set userToken to Local Storage
-      setTokenToLocalStorage(USER_TOKEN, res.data.token);
-      return dispatch(attemptLoginSuccessfully(res.data));
+      setTokenToLocalStorage(USER_TOKEN, res.data.token).then(() => {
+        dispatch(attemptLoginSuccessfully(res.data));
+      });
     })
     .catch(err => {
       console.log('error');

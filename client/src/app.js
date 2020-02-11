@@ -3,17 +3,14 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import RouterComponent from './router/RouterComponent';
+import { USER_TOKEN, USER_TOKEN_IS_EMPTY } from './constant';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
   render() {
+    const user = localStorage.getItem(USER_TOKEN) || USER_TOKEN_IS_EMPTY;
     return (
       <div>
-        <RouterComponent />
+        <RouterComponent user={user} />
       </div>
     );
   }
