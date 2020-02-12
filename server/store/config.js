@@ -8,7 +8,7 @@ export const config = {
     mongoDBUri:
       process.env.ENV === 'prod'
         ? 'mongodb+srv://user:usertestingpassword@cluster0-yfpdy.mongodb.net/test?retryWrites=true&w=majority'
-        : 'mongodb://localhost/dpa',
+        : 'mongodb://localhost/test',
     mongoHostName: process.env.ENV === 'prod' ? 'mongodbAtlas' : 'localhost',
   },
 };
