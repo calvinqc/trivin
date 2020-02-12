@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-
 import RouterComponent from './router/RouterComponent';
-import { USER_TOKEN, USER_TOKEN_IS_EMPTY } from './constant';
+
+import { setUserToken } from './actions/auth.action';
+import { USER_TOKEN } from './constant';
 
 class App extends Component {
+  componentDidMount() {
+    const token = localStorage.getItem(USER_TOKEN);
+    if (token) {
+      this.props.setUserToken({ token });
+    }
+  }
+
   render() {
-    const user = localStorage.getItem(USER_TOKEN) || USER_TOKEN_IS_EMPTY;
+    const user = this.props.user || {};
     return (
       <div>
         <RouterComponent user={user} />
@@ -20,9 +28,7 @@ function mapStateToProps(state) {
     user: state.user,
   };
 }
-
 function matchDispatchToProps(dispatch) {
-  return bindActionCreators({}, dispatch);
+  return bindActionCreators({ setUserToken }, dispatch);
 }
-
 export default connect(mapStateToProps, matchDispatchToProps)(App);

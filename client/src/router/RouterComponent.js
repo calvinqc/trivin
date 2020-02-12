@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import RoutesComponent from './RoutesComponent';
@@ -8,7 +7,6 @@ import RoutesComponent from './RoutesComponent';
 class RouterComponent extends Component {
   render() {
     const user = this.props.user || {};
-
     return (
       <Router basename="/">
         <div>
@@ -18,5 +16,4 @@ class RouterComponent extends Component {
     );
   }
 }
-
 export default connect()(RouterComponent);

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 const Login = props => {
   return (
     <div className="container">
@@ -17,24 +16,20 @@ const Login = props => {
               <input
                 onChange={props.onChange}
                 value={props.email.value}
-                error={props.errors.email}
                 id="email"
                 type="email"
                 name="email"
               />
-              {/* <label htmlFor='email'>Email</label> */}
             </div>
             <div className="input-field col s12">
               Password
               <input
                 onChange={props.onChange}
                 value={props.password.value}
-                error={props.errors.password}
                 id="password"
                 type="password"
                 name="password"
               />
-              {/* <label htmlFor='password'>Password</label> */}
               <p className="grey-text text-darken-1">
                 Don't have an account? <Link to="/register">Register</Link>
               </p>
@@ -59,5 +54,4 @@ const Login = props => {
     </div>
   );
 };
-
 export default Login;

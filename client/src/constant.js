@@ -1,16 +1,13 @@
 export const HOST = 'http://localhost:8080';
-export const USER_TOKEN = 'USER_TOKEN';
-export const USER_TOKEN_IS_EMPTY = 'USER_TOKEN_IS_EMPTY';
 
-export const REGISTER_URI = '/register';
+// User Token
+export const USER_TOKEN = 'USER_TOKEN';
+export const SET_USER_TOKEN = 'SET_USER_TOKEN';
+
+// Server URI
 export const LOGIN_URI = '/login';
 
-// Register
-export const ATTEMPT_REGISTER_FAILED = 'ATTEMPT_REGISTER_FAILED';
-export const ATTEMPT_REGISTER_SUCCESSFULLY = 'ATTEMPT_REGISTER_SUCCESSFULLY';
-
-// Login
-export const ATTEMPT_LOGIN_FAILED = 'ATTEMPT_LOGIN_FAILED';
-export const ATTEMPT_LOGIN_SUCCESSFULLY = 'ATTEMPT_LOGIN_SUCCESSFULLY';
-
-export const ATTEMPT_LOGOUT = 'ATTEMPT_LOGOUT';
+// Auth
+export const LOGIN_FAILED = 'LOGIN_FAILED';
+export const LOGIN_SUCCESSFULLY = 'LOGIN_SUCCESSFULLY';
+export const LOGOUT = 'LOGOUT';
