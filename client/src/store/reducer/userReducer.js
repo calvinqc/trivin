@@ -3,7 +3,7 @@ import {
   LOGIN_FAILED,
   LOGOUT,
   SET_USER_TOKEN,
-} from '../constant';
+} from '../../constant';
 
 export default function(state = { loading: false, errors: null }, action) {
   switch (action.type) {

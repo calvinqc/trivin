@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import RouterComponent from './router/RouterComponent';
 
-import { setUserToken } from './actions/auth.action';
+import { setUserToken } from './store/actions/auth.action';
 import { USER_TOKEN } from './constant';
 
 class App extends Component {

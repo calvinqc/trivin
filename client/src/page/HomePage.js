@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import { USER_TOKEN } from '../constant';
-import { logout } from '../actions/auth.action';
+import { logout } from '../store/actions/auth.action';
 
 import Landing from '../components/Landing';
 import Home from '../components/Home';
