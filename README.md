@@ -7,7 +7,7 @@ Medium **[Instruction](https://medium.com/swlh/a-complete-guide-build-a-scalable
 Code found **[here](https://github.com/calvinqc/Nodejs-Server-Template)**
 
 ## React + Redux-thunk + Router Setup
-Medium: In Progress
+Medium: [Instruction here](https://medium.com/@calvinqc/i-built-a-m-e-r-n-codebase-in-an-hour-742acd71ed7e)
 
 Code found **[here](https://github.com/calvinqc/MERN-template/tree/master/client)**
 
