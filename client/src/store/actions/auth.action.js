@@ -4,7 +4,7 @@ import {
   LOGIN_FAILED,
   LOGIN_SUCCESSFULLY,
   LOGOUT,
-} from '../../constant';
+} from '../../constants';
 
 export const loginFailed = error => ({
   type: LOGIN_FAILED,

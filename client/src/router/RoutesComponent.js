@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
 // Page
-import HomePage from '../page/HomePage';
-import LoginPage from '../page/LoginPage';
+import HomePage from '../pages/HomePage';
+import LoginPage from '../pages/LoginPage';
 
 class RoutesComponent extends Component {
   render() {

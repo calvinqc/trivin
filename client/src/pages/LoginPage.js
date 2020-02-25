@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { Redirect, withRouter } from 'react-router-dom';
 
 import { login } from '../api/login.api';
-import Login from '../component/Login.js';
+import Login from '../components/Login.js';
 
 class LoginPage extends Component {
   constructor() {

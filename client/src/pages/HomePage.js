@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { USER_TOKEN } from '../constant';
-import { logout } from '../store/action/auth.action';
+import { USER_TOKEN } from '../constants';
+import { logout } from '../store/actions/auth.action';
 
-import Landing from '../component/Landing';
-import Home from '../component/Home';
+import Landing from '../components/Landing';
+import Home from '../components/Home';
 
 class HomePage extends Component {
   onClick = e => {
