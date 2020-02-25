@@ -1,7 +1,7 @@
 import axios from 'axios';
-import { loginSuccessfully, loginFailed } from '../store/actions/auth.action';
+import { loginSuccessfully, loginFailed } from '../store/action/auth.action';
 import { HOST, LOGIN_URI, USER_TOKEN } from '../constant';
-import { setTokenToLocalStorage } from '../utils';
+import { setTokenToLocalStorage } from '../util';
 
 // eslint-disable-next-line import/prefer-default-export
 export const login = userData => dispatch => {

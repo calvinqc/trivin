@@ -3,10 +3,10 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import { USER_TOKEN } from '../constant';
-import { logout } from '../store/actions/auth.action';
+import { logout } from '../store/action/auth.action';
 
-import Landing from '../components/Landing';
-import Home from '../components/Home';
+import Landing from '../component/Landing';
+import Home from '../component/Home';
 
 class HomePage extends Component {
   onClick = e => {
