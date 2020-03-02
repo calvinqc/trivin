@@ -1,0 +1,6 @@
+# Mailing Serivce
+export PROJECT_ID="sending-email-project-269823"
+export SENDER_EMAIL_ADDRESS="calvin.nvqc@gmail.com"
+export MAILING_SERVICE_CLIENT_ID="314376763439-94j9fm88aoa0816pgse4l1814r951l48.apps.googleusercontent.com"
+export MAILING_SERVICE_CLIENT_SECRET="If6f9SaPyRbAkU1yN0kYJVkP"
+export MAILING_SERVICE_REFRESH_TOKEN="1//04oPlDLH4Zww3CgYIARAAGAQSNwF-L9IrDq9P5zQo_MAdx1JrpxCnFm1SwFy5WHrWtguvi6aabQIBpGjgtcfy27owHtj1taRMeLI"
