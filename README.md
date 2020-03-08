@@ -42,5 +42,8 @@ Medium **[Instruction](https://medium.com/swlh/a-complete-guide-build-a-scalable
 
 Code found **[here](https://github.com/calvinqc/Nodejs-Server-Template)**
 
+### Multi-purpose API 
+Medium **[Instruction](https://medium.com/@calvinqc/multi-purposes-mailing-api-using-nodemailer-gmail-google-oauth-28de49118d77)**
+
 ### Deployment 
 In Progress 
