@@ -11,7 +11,8 @@ class LoginPage extends Component {
     super();
     this.state = {
       email: '',
-      password: '',
+      subject: '',
+      message: '',
     };
 
     this.onChange = this.onChange.bind(this);
@@ -24,16 +25,13 @@ class LoginPage extends Component {
 
   onClick = e => {
     e.preventDefault();
-    this.props.login({
-      email: this.state.email,
-      password: this.state.password,
-    });
+    const { email, password } = this.state;
+    this.props.login({ email, password });
   };
 
   render() {
-    const email = { ...this.state.email };
-    const password = { ...this.state.password };
-    const user = this.props.user || {};
+    const { email, password } = { ...this.state };
+    const { user } = this.props || {};
     const { token } = user;
 
     return token ? (

@@ -10,13 +10,16 @@ export const loginFailed = error => ({
   type: LOGIN_FAILED,
   payload: error,
 });
+
 export const loginSuccessfully = user => ({
   type: LOGIN_SUCCESSFULLY,
   payload: user,
 });
+
 export const logout = () => ({
   type: LOGOUT,
 });
+
 export const setUserToken = user => ({
   type: SET_USER_TOKEN,
   payload: user,
