@@ -11,8 +11,7 @@ class LoginPage extends Component {
     super();
     this.state = {
       email: '',
-      subject: '',
-      message: '',
+      password: '',
     };
 
     this.onChange = this.onChange.bind(this);
