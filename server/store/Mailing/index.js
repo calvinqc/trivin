@@ -53,7 +53,7 @@ Mailing.sendEmail = data => {
     const mailOptions = {
       from: SENDER_EMAIL_ADDRESS,
       to: data.email,
-      subject: 'Welcome to ABC Inc.',
+      subject: data.subject,
       html: content,
     };
 

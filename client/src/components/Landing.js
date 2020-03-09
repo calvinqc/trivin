@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 const Landing = () => {
   return (
     <div style={{ height: '75vh' }} className="container valign-wrapper">

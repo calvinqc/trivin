@@ -1,9 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "private": true,
+  "main": "app.js",
+  "license": "MIT",
+  "author": "Calvin Nguyen",
   "scripts": {
-    "start": "node -r esm app.js",
+    "start": "ENV=prod node -r esm app.js",
     "dev": "nodemon -r esm app.js"
   },
   "dependencies": {
@@ -21,17 +23,18 @@
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "sha256": "^0.2.0",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "esm": "^3.2.25"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.8.4",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "esm": "^3.2.25"
+    "eslint-plugin-prettier": "^3.1.2"
   }
 }
