@@ -1,3 +1,4 @@
+// To-do Need to change to bcrypt
 import sha256 from 'sha256';
 import { check } from 'express-validator';
 
