@@ -1,0 +1,45 @@
+{
+  "name": "create-mern",
+  "version": "1.0.0",
+  "description": "A CLI to bootsrap a fullstack MERN project",
+  "main": "src/index.js",
+  "bin": {
+    "@calvinqc/create-mern": "bin/create-mern-app",
+    "create-mern-app": "bin/create-mern-app",
+    "qc-mern": "bin/create-mern-app"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "create-mern"
+  ],
+  "author": "Calvin Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "arg": "^4.1.3",
+    "chalk": "^3.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "esm": "^3.2.25",
+    "execa": "^4.0.0",
+    "inquirer": "^7.1.0",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0",
+    "prettier": "^1.19.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^1.7.0"
+  }
+}
