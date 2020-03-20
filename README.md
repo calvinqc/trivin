@@ -18,7 +18,7 @@
   </a>
 </p>
 
-Trivin is a free and open source that boostrap everything you need to deploy your full-stack application. It consists of clean and quality code, and suggested by industry engineers.
+**[Trivin](https://calvinqc.github.io/MERN-template/)** is a free and open-source project that bootstrap everything you need to deploy your full-stack application. It consists of clean and quality code, which is suggested by industry engineers.
 
 - ESLint Airbnb Config + Prettier
 - Securely Authenticate/Authorize APIs with Passport-JWT

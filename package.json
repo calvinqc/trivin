@@ -1,5 +1,5 @@
 {
-  "name": "Trivin",
+  "name": "trivin",
   "email": "calvin.nvqc@gmail.com",
   "url": "https://calvinqc.com",
   "version": "1.0.0",
@@ -26,9 +26,9 @@
     "src/",
     "templates/"
   ],
-  "homepage": "https://github.com/calvinqc/MERN-template",
+  "homepage": "https://github.com/calvinqc/trivin",
   "bugs": {
-    "url": "https://github.com/calvinqc/MERN-template/issues",
+    "url": "https://github.com/calvinqc/trivin/issues",
     "email": "calvin.nvqc@gmail.com"
   },
   "author": "Calvin Nguyen",
