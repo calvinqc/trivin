@@ -69,7 +69,7 @@ export async function createMern(options) {
       enabled: () => options.git,
     },
     {
-      title: `Install all dependencies. This could take around 1~2 minutes.`,
+      title: `Install all dependencies. This might take a few minutes.`,
       task: async () => {
         for (const dir of dirs(templateDir)) {
           await projectInstall({
