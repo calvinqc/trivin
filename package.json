@@ -1,8 +1,8 @@
 {
-  "name": "Trivin",
+  "name": "trivin",
   "email": "calvin.nvqc@gmail.com",
   "url": "https://calvinqc.com",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI to bootstrap any projects",
   "main": "src/index.js",
   "bin": {
@@ -11,11 +11,11 @@
     "trivin": "bin/trivin"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
-    "start": "",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": ""
   },
   "keywords": [
     "cli",
@@ -26,9 +26,9 @@
     "src/",
     "templates/"
   ],
-  "homepage": "https://github.com/calvinqc/MERN-template",
+  "homepage": "https://github.com/calvinqc/trivin",
   "bugs": {
-    "url": "https://github.com/calvinqc/MERN-template/issues",
+    "url": "https://github.com/calvinqc/trivin/issues",
     "email": "calvin.nvqc@gmail.com"
   },
   "author": "Calvin Nguyen",
