@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://strapi.io">
+  <a href="https://calvinqc.github.io/trivin/">
     <img src="./assets/gh3.png" width="100%" alt="Trivin logo" />
   </a>
 </p>
@@ -7,14 +7,6 @@
 <p align="center">The most well-structured open-source template to build a powerful and clean apps</p>
 <br />
 <p align="center">
-  <!-- <a href="https://www.npmjs.org/package/strapi">
-    <img src="https://img.shields.io/npm/v/strapi/beta.svg" alt="NPM Version" />
-  </a>
-  <a href="https://www.npmjs.org/package/strapi">
-    <img src="https://img.shields.io/npm/dm/strapi.svg" alt="Monthly download on NPM" />
-  </a> -->
-  <!-- <a href="http://trivin.slack.com">
-    <img src="https://slack.strapi.io/badge.svg" alt="Trivin on Slack" /> -->
     <img src="./assets/trivin_demo.gif" />
   </a>
 </p>
