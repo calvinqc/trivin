@@ -1,6 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import arg from 'arg';
 import inquirer from 'inquirer';
+import fs from 'fs';
 
 import { createMern } from './main';
 
@@ -21,7 +22,8 @@ function parseArgumentsIntoOptions(rawArgs) {
   return {
     skipPrompts: args['--yes'] || false,
     git: args['--git'] || false,
-    template: args._[0],
+    name: args._[0],
+    template: args._[1] || false,
     runInstall: args['--install'] || false,
   };
 }
@@ -37,6 +39,16 @@ async function promptForMissingOptions(options) {
 
   const questions = [];
 
+  if (!options.template) {
+    questions.push({
+      type: 'list',
+      name: 'template',
+      message: 'Please choose which project template to use',
+      choices: ['mern', 'node-passport-jwt', 'react'],
+      default: defaultTemplate,
+    });
+  }
+
   if (!options.git) {
     questions.push({
       type: 'confirm',
@@ -49,15 +61,26 @@ async function promptForMissingOptions(options) {
   const answers = await inquirer.prompt(questions);
   return {
     ...options,
-    template: defaultTemplate,
+    template: options.template || answers.template,
     git: options.git || answers.git,
   };
+}
+
+async function createFolder(options) {
+  const dir = `${process.cwd()}/${options.name}`;
+  try {
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir);
+    }
+    process.chdir(dir);
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 export async function cli(args) {
   let options = parseArgumentsIntoOptions(args);
   options = await promptForMissingOptions(options);
-
-  // console.log(options);
+  await createFolder(options);
   await createMern(options);
 }

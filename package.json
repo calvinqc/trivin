@@ -1,12 +1,14 @@
 {
-  "name": "create-mern",
+  "name": "Trivin",
+  "email": "calvin.nvqc@gmail.com",
+  "url": "https://calvinqc.com",
   "version": "1.0.0",
-  "description": "A CLI to bootsrap a fullstack MERN project",
+  "description": "A CLI to bootstrap any projects",
   "main": "src/index.js",
   "bin": {
-    "@calvinqc/create-mern": "bin/create-mern-app",
-    "create-mern-app": "bin/create-mern-app",
-    "qc-mern": "bin/create-mern-app"
+    "@calvinqc/trivin": "bin/trivin",
+    "vin": "bin/trivin",
+    "trivin": "bin/trivin"
   },
   "publishConfig": {
     "access": "public"
@@ -19,23 +21,34 @@
     "cli",
     "create-mern"
   ],
+  "files": [
+    "bin/",
+    "src/",
+    "templates/"
+  ],
+  "homepage": "https://github.com/calvinqc/MERN-template",
+  "bugs": {
+    "url": "https://github.com/calvinqc/MERN-template/issues",
+    "email": "calvin.nvqc@gmail.com"
+  },
   "author": "Calvin Nguyen",
   "license": "ISC",
   "dependencies": {
     "arg": "^4.1.3",
     "chalk": "^3.0.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-prettier": "^3.1.2",
     "esm": "^3.2.25",
     "execa": "^4.0.0",
     "inquirer": "^7.1.0",
     "listr": "^0.14.3",
+    "mkdirp": "^1.0.3",
     "ncp": "^2.0.0",
-    "pkg-install": "^1.0.0",
-    "prettier": "^1.19.1"
+    "pkg-install": "^1.0.0"
   },
   "devDependencies": {
+    "prettier": "^1.19.1",
     "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",

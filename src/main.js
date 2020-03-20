@@ -10,6 +10,8 @@ import execa from 'execa';
 import Listr from 'listr';
 import { projectInstall } from 'pkg-install';
 
+const { readdirSync, statSync } = require('fs');
+const { join } = require('path');
 const access = promisify(fs.access);
 const copy = promisify(ncp);
 
@@ -37,12 +39,17 @@ export async function createMern(options) {
   };
 
   const currentFileURL = import.meta.url;
+
   const templateDir = path.resolve(
     new URL(currentFileURL).pathname,
     '../../templates',
     options.template.toLowerCase()
   );
+
   options.templateDirectory = templateDir;
+
+  const dirs = p =>
+    readdirSync(p).filter(f => statSync(join(p, f)).isDirectory());
 
   try {
     await access(templateDir, fs.constants.R_OK);
@@ -62,11 +69,15 @@ export async function createMern(options) {
       enabled: () => options.git,
     },
     {
-      title: 'Install dependencies',
-      task: () =>
-        projectInstall({
-          cwd: options.targetDirectory,
-        }),
+      title: `Install all dependencies. This could take around 1~2 minutes.`,
+      task: async () => {
+        for (const dir of dirs(templateDir)) {
+          await projectInstall({
+            cwd: dir,
+          });
+        }
+      },
+
       skip: () =>
         !options.runInstall
           ? 'Pass -- install to automatically install all dependencies for the project'
@@ -74,11 +85,9 @@ export async function createMern(options) {
     },
   ]);
 
-  await tasks.run();
-
-  console.log(
-    'Initialized M.E.R.N project with MongoDB Atlas/Google App Engine setup'
-  );
-  await copyTemplateFiles(options);
-  console.log('%s Project ready', chalk.green.bold('DONE'));
+  await tasks.run().then(() => {
+    console.log(`Initialized ${options.template} project.`);
+    copyTemplateFiles(options);
+    console.log('%s Project ready', chalk.green.bold('DONE'));
+  });
 }
