@@ -1,4 +1,4 @@
-# Trivin
+# Trivin [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/calvinqc/trivin/pulls) [![Top Language](https://img.shields.io/github/languages/top/calvinqc/trivin)](https://www.javascript.com/) [![Liscence](https://img.shields.io/npm/l/trivin)]() [![Stars](https://img.shields.io/github/stars/calvinqc/trivin?style=social)](https://github.com/calvinqc/trivin/stargazers)
 
 <h2 align="center">Trivin made everything simple, fast, and clean</h3>
 <p align="center">The most well-structured open-source template to build a powerful and clean apps</p>
