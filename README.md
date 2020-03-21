@@ -1,7 +1,5 @@
-# Trivin
-
-<h2 align="center">Trivin made everything simple, fast, and clean</h3>
-<p align="center">The most well-structured open-source template to build a powerful and clean apps</p>
+<h2 align="center">Trivin made everything simple, fast, and clean</h2>
+<h3 align="center">The most well-structured open-source template to build a powerful and clean apps</h3>
 
 <p align="center">
   <a href="https://github.com/calvinqc/trivin/pulls">
@@ -61,7 +59,12 @@ DONE Project ready
 
 # Feature
 
-- Choose a template `$ trivin <app-name> <app-template>`. Default template: MERN
+- Choose a template. Default template: MERN
+
+```
+$ trivin <app-name> <app-template>
+```
+
 - `-g`: git init for your project
 - `-i`: Install all dependencies for both React and Node folders
 - ESLint Airbnb Config + Prettier
