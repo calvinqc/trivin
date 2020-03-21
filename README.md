@@ -2,17 +2,29 @@
 
 <h2 align="center">Trivin made everything simple, fast, and clean</h3>
 <p align="center">The most well-structured open-source template to build a powerful and clean apps</p>
-<br />
+
 <p align="center">
-    <img src="./assets/trivin_demo.gif" />
+  <a href="https://github.com/calvinqc/trivin/pulls">
+    <img src="https://img.shields.io/badge/PRs-welcome-green.svg" alt="PRs Welcome" />
+  </a>
+  <a href="https://www.javascript.com/">
+    <img src="https://img.shields.io/github/languages/top/calvinqc/trivin" alt="Top Language" />
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/npm/l/trivin" alt="Liscence" />
+  </a>
+  <a href="https://github.com/calvinqc/trivin/stargazers">
+    <img src="https://img.shields.io/github/stars/calvinqc/trivin?style=social" alt="Stars" />
   </a>
 </p>
 
-**[Trivin](https://calvinqc.github.io/trivin/)** is a free and open-source project that bootstrap everything you need to deploy your full-stack application. It consists of clean and quality code, which is suggested by industry engineers.
+<!-- <p align="center">
 
-- ESLint Airbnb Config + Prettier
-- Securely Authenticate/Authorize APIs with Passport-JWT
-- Works on macOS, Windows, and Linux.
+    <img src="./assets/trivin_demo.gif" />
+  </a>
+</p> -->
+
+**[Trivin](https://calvinqc.github.io/trivin/)** is a free and open-source project that bootstrap everything you need to deploy your full-stack application. It consists of clean and quality code, which is suggested by industry engineers.
 
 # Getting Started
 
@@ -52,6 +64,9 @@ DONE Project ready
 - Choose a template `$ trivin <app-name> <app-template>`. Default template: MERN
 - `-g`: git init for your project
 - `-i`: Install all dependencies for both React and Node folders
+- ESLint Airbnb Config + Prettier
+- Securely Authenticate/Authorize APIs with Passport-JWT
+- Works on macOS, Windows, and Linux.
 
 ## Project
 

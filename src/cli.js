@@ -44,7 +44,7 @@ async function promptForMissingOptions(options) {
       type: 'list',
       name: 'template',
       message: 'Please choose which project template to use',
-      choices: ['mern', 'node-passport-jwt', 'react'],
+      choices: ['mern', 'node-passport-jwt', 'react', 'simple-node-server'],
       default: defaultTemplate,
     });
   }
