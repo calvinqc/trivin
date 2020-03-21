@@ -1,8 +1,5 @@
-<p align="center">
-  <a href="https://calvinqc.github.io/trivin/">
-    <img src="./assets/gh3.png" width="100%" alt="Trivin logo" />
-  </a>
-</p>
+# Trivin
+
 <h2 align="center">Trivin made everything simple, fast, and clean</h3>
 <p align="center">The most well-structured open-source template to build a powerful and clean apps</p>
 <br />
