@@ -3,7 +3,7 @@ import arg from 'arg';
 import inquirer from 'inquirer';
 import fs from 'fs';
 
-import { createMern } from './main';
+import { createProject } from './main';
 
 function parseArgumentsIntoOptions(rawArgs) {
   const args = arg(
@@ -73,6 +73,7 @@ async function createFolder(options) {
       fs.mkdirSync(dir);
     }
     process.chdir(dir);
+    await createProject(options);
   } catch (err) {
     console.error(err);
   }
@@ -82,5 +83,4 @@ export async function cli(args) {
   let options = parseArgumentsIntoOptions(args);
   options = await promptForMissingOptions(options);
   await createFolder(options);
-  await createMern(options);
 }

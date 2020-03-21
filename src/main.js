@@ -15,6 +15,10 @@ const { join } = require('path');
 const access = promisify(fs.access);
 const copy = promisify(ncp);
 
+/**
+ * Initialize git to the directory
+ * @param {Object} options
+ */
 async function initGit(options) {
   const result = await execa('git', ['init'], {
     cwd: options.targetDirectory,
@@ -26,13 +30,21 @@ async function initGit(options) {
   return;
 }
 
+/**
+ * Copy all folders & templates into the target directory
+ * @param {Object} options
+ */
 async function copyTemplateFiles(options) {
   return copy(options.templateDirectory, options.targetDirectory, {
     clobber: false,
   });
 }
 
-export async function createMern(options) {
+/**
+ * Main function that will do all the work
+ * @param {Object} options
+ */
+export async function createProject(options) {
   options = {
     ...options,
     targetDirectory: options.targetDirectory || process.cwd(),

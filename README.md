@@ -12,12 +12,15 @@
     <img src="https://img.shields.io/npm/l/trivin" alt="Liscence" />
   </a>
   <a href="https://github.com/calvinqc/trivin/stargazers">
+    <img src="https://img.shields.io/npm/dw/trivin" alt="Download" />
+  </a>
+
+  <a href="https://www.npmjs.com/package/trivin">
     <img src="https://img.shields.io/github/stars/calvinqc/trivin?style=social" alt="Stars" />
   </a>
 </p>
 
 <!-- <p align="center">
-
     <img src="./assets/trivin_demo.gif" />
   </a>
 </p> -->
@@ -48,6 +51,7 @@ $ trivin myapp -g -i
 ❯ mern
   node-passport-jwt
   react
+  simple-node-server
 
   ✔ Copy Project files
   ✔ Initialize git
@@ -74,28 +78,44 @@ $ trivin <app-name> <app-template>
 ## Project
 
 - Include Redux Dev Tools Config (You need to install this extension on your browser)
-- React project is well-structured with Redux-thunk/React-router/Axios
-- Register/login/ other APIs are authenticate/authorize with Passport-jwt
-- Deployment: Choices to deploy app with Google App Engine/Heroku
+
+- **React** project is well-structured with Redux-thunk/React-router/Axios
+
+- Authenticate/authorize with Passport-jwt
+
 - Database: MongoDB is hosted on MongoDB Atlas
+
 - Mailing API for multiple purposes using Nodemailer and Google OAuth Client
-
-# Help/Supports
-
-Join Trivin's Slack Channel and ask any questions [here](trivin.slack.com)
 
 # Become a Trivin Contributor
 
-- If something doesn’t work, please [file an issue here](https://github.com/calvinqc/trivin/issues).
+1. Fork the repo
 
-- Looking to contribute a great template to this open source. Pull requests are always welcome.
+2. Create a folder with your **Template-name** and add all files to that folder
 
-- Check out new Github CLI [Here.](https://medium.com/better-programming/say-hello-to-the-new-github-clis-7e2612fb3918)
+3. Add your template name to **[Choices](https://github.com/calvinqc/trivin/blob/dee197123419e267193d90b9795a72f9ae909a27/src/)**.
+
+   - **IMPORTANT: The name should be the same**
+
+4. Practicing pushing to your branch and create a PR with Github CLI
+
+   - Check out how to use new Github CLI [here.](https://medium.com/better-programming/say-hello-to-the-new-github-clis-7e2612fb3918)
+
+5. Trivin team will review your code, and approve/request changes.
 
 # Upcoming Feature
 
 - Testing
-- Deployment/ Hosting
+
+- README for each template
+
+- Deployment: Choices to deploy app with Google App Engine/Heroku
+
+# Help/Supports
+
+- Join Trivin's Slack Channel and ask any questions [here](trivin.slack.com)
+
+- If something doesn’t work, please [file an issue here](https://github.com/calvinqc/trivin/issues).
 
 # Learning
 
@@ -109,7 +129,7 @@ Join Trivin's Slack Channel and ask any questions [here](trivin.slack.com)
 
 ### Very Simple Node.js setup
 
-- Medium **[Instruction](https://medium.com/swlh/a-complete-guide-build-a-scalable-3-tier-architecture-with-mern-stack-es6-ca129d7df805)**. Code found **[here](https://github.com/calvinqc/Nodejs-Server-Template)**
+- Medium **[Instruction](https://medium.com/swlh/a-complete-guide-build-a-scalable-3-tier-architecture-with-mern-stack-es6-ca129d7df805)**. Code found **[here](https://github.com/calvinqc/trivin/tree/master/templates/simple-node-server)**
 
 ### Multi-purpose API
 
@@ -117,4 +137,4 @@ Join Trivin's Slack Channel and ask any questions [here](trivin.slack.com)
 
 # License
 
-This project is open-sourced software licensed under the MIT License. See the LICENSE file for more information.
+This project is open-sourced software licensed under the ISC License. See the LICENSE file for more information.
