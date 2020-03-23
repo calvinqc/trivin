@@ -2,7 +2,7 @@
   "name": "trivin",
   "email": "calvin.nvqc@gmail.com",
   "url": "https://calvinqc.com",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A CLI to bootstrap any projects",
   "main": "src/index.js",
   "bin": {
