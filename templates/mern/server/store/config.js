@@ -7,7 +7,7 @@ export const config = {
     port: 8080,
     mongoDBUri:
       process.env.ENV === 'prod'
-        ? 'mongodb+srv://<user-name:<user-password>@<mongodb-cluster-name>'
+        ? 'mongodb+srv://user:userTestingPassword@cluster0-yfpdy.mongodb.net/test?retryWrites=true&w=majority'
         : 'mongodb://localhost/test',
     mongoHostName: process.env.ENV === 'prod' ? 'mongodbAtlas' : 'localhost',
   },
