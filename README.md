@@ -20,11 +20,6 @@
   </a>
 </p>
 
-<!-- <p align="center">
-    <img src="./assets/trivin_demo.gif" />
-  </a>
-</p> -->
-
 **[Trivin](https://calvinqc.github.io/trivin/)** is a free and open-source project that bootstrap everything you need to deploy your full-stack application. It consists of clean and quality code, which is suggested by industry engineers.
 
 # Getting Started
