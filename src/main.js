@@ -9,6 +9,7 @@ import { promisify } from 'util';
 import execa from 'execa';
 import Listr from 'listr';
 import { projectInstall } from 'pkg-install';
+import { fileURLToPath } from 'url';
 
 const { readdirSync, statSync } = require('fs');
 const { join } = require('path');
@@ -50,7 +51,7 @@ export async function createProject(options) {
     targetDirectory: options.targetDirectory || process.cwd(),
   };
 
-  const currentFileURL = import.meta.url;
+  const currentFileURL = dirname(fileURLToPath(import.meta.url));
 
   const templateDir = path.resolve(
     new URL(currentFileURL).pathname,
